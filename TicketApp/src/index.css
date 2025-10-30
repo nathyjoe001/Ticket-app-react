@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-800;
+}
+
+button {
+  @apply px-4 py-2 rounded-lg font-medium transition;
+}
+
+/* src/pages/Landing.css */
+/* slow float up/down */
+@keyframes float-slow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes float-slow-reverse {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(12px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-float-slow {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+.animate-float-slow-reverse {
+  animation: float-slow-reverse 4s ease-in-out infinite;
+}
+/* TicketApp theme for toast notifications */
+.Toastify__toast--success {
+  background: #531CB3; /* your primary purple */
+  color: #fff;
+}
+
+.Toastify__toast--error {
+  background: #E53935; /* red for errors */
+  color: #fff;
+}
+
+.Toastify__toast--info {
+  background: #58B09C; /* green-teal for info */
+  color: #fff;
+}
+
+.Toastify__progress-bar {
+  background: #fff; /* visible progress bar */
+}
